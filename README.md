@@ -34,3 +34,23 @@ Antes de comenzar, asegúrate de cumplir con los siguientes requisitos en tu sis
    sudo apt install virtualbox
    sudo apt install virtualbox-ext-pack
 
+## 3. Descarga de Debian 12 (64 bits)
+
+1. Ve al sitio oficial de Debian: [https://www.debian.org/distrib/](https://www.debian.org/distrib/).
+   
+2. En la sección de descarga, selecciona la **versión estable** actual, que es Debian 12.
+
+3. **Selecciona la arquitectura**:
+   - Elige la opción **amd64** para arquitecturas de 64 bits.
+
+4. **Descarga la ISO del DVD**:
+   - Para una instalación completa sin requerir una conexión a Internet, elige la imagen **DVD**.
+   - Haz clic en el enlace de descarga del primer DVD (DVD-1) que contiene los paquetes necesarios para la instalación básica.
+
+   - **URL directa**: https://cdimage.debian.org/debian-cd/current/amd64/iso-dvd/
+   
+   - **Tamaño del archivo**: Alrededor de 4GB
+
+---
+
+Asegúrate de que la imagen ISO descargada esté completa antes de continuar con la creación de la máquina virtual.
