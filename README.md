@@ -269,7 +269,12 @@ Para cualquier duda o sugerencia, no dudes en contactar conmigo o colaborar en e
 Si quieres ver comandos básicos de linux, puedes visitar mi repositorio (pdte de subir) donde encontrarás una guía básica de comandos linux  y los comandos de administración del sistema más utilizados.
 
 
-![fin](imgs/thanks.png)
+
+
+ <img src="imgs/thanks.png" alt="fin" width="500">
+
+
+
 ---
 
 
