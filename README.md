@@ -1,6 +1,8 @@
 # maquinaDebian12
 Preparación de una maquina con su configuración personalizada
 
+![debian](imgs/debian.png)
+
 # Requisitos para Preparar una Máquina Virtual con Debian 12
 
 ## 1. Requisitos Generales
@@ -100,7 +102,7 @@ Para las demás opciones durante la instalación, puedes seguir el asistente y s
 
 ---
 
-## 6. Instalacion guest-additions en Debian 12
+## 6. Instalación guest-additions en Debian 12
 
 ![guestADD](image7.png)
 ![guestADD2](image8.png)
@@ -215,30 +217,35 @@ ping google.com
 # 9. Personalización de Debian 12 interesante
 
 ## 9.1 Reemplazar Network Manager por net-tools (opcional)
-
-    ```bash
-    apt purge network-manager
-    apt install net-tools
-    ```
-
-## 9.2 hostname (camibar el nombre de la máquina)
     
-        ```bash
-        nano /etc/hostname
-        ```
+```bash
+apt purge network-manager
+```
+
+
+```bash
+apt install net-tools
+```
+
+
+## 9.2 hostname (cambiar el nombre de la máquina)
+    
+```bash
+nano /etc/hostname
+```
 
 ## 9.3 Instalar htop (monitor de recursos)
 
-    ```bash
-    apt install htop
-    ```
+```bash
+apt install htop
+```
 
 ## 9.4 Configurar la ayuda en español (man)
 
-    ```bash
-    apt install manpages-es
-    ```
-o
+```bash
+apt install manpages-es
+```
+TAMBIÉN PODEMOS EDITAR EL
 
 archivo de configuracion  etc/locale.gen
 y  /etc/default/locale y añadir 
@@ -254,8 +261,17 @@ LC_ALL=es_ES.UTF-8
     ```bash
     apt install gnome-system-tools
     ```
+---
+Con esto ya tendremos una maquina virtual con debian 12 personalizada y lista para trabajar.
 
-    
+Para cualquier duda o sugerencia, no dudes en contactar conmigo o colaborar en el repositorio.Gracias.
+
+Si quieres ver comandos básicos de linux, puedes visitar mi repositorio (pdte de subir) donde encontrarás una guía básica de comandos linux  y los comandos de administración del sistema más utilizados.
+
+
+![fin](imgs/thanks.png)
+---
+
 
 
 
