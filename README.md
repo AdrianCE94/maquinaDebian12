@@ -104,6 +104,7 @@ Para las demás opciones durante la instalación, puedes seguir el asistente y s
 
 ![guestADD](image7.png)
 ![guestADD2](image8.png)
+![guest_ADD3](image9.png)
 
 # 7. Configuración de Repositorios para Debian 12
 
@@ -118,6 +119,7 @@ su -
 
 nano /etc/apt/sources.list
 ```
+
 
 ## 7.2. Configurar los repositorios
 
@@ -136,6 +138,8 @@ deb-src http://deb.debian.org/debian/ bookworm-updates main contrib non-free
 
 **_NOTA: NO OLVIDES COMENTAR LA PRIMERA LINEA NADA MÁS ABRIR EL ARHIVO DE REPOSITORIOS, PUEDE DAR FALLO AL ACTUALIZAR_**
 
+![repos](image10.png)
+
 ## 7.3. Guardar y Salir
 
 Guarda los cambios y cierra el archivo
@@ -149,3 +153,59 @@ Actualiza la lista de paquetes de Debian 12 ejecutando el siguiente comando:
 apt update && apt upgrade -y
 ```
 **_NOTA: PUEDE SER QUE NECESITES SER ROOT, PARA ELLO EJECUTA EL COMANDO `su -` Y LUEGO EL COMANDO ANTERIOR_**
+
+![updatingrepos](image11.png)
+
+---
+
+# 8. Configuración manual de la red (adaptador puente-red estática)
+
+Para configurar la red en Debian 12, sigue estos pasos:
+
+## 8.1. Editar el archivo de configuración de red
+
+Averigua el nombre de la interfaz de red ejecutando el siguiente comando:
+
+`ip a`
+
+![IPA](image12.png)
+como root,
+
+```bash
+nano /etc/network/interfaces
+
+```
+
+## 8.2. Configurar la interfaz de red
+
+Agrega las siguientes líneas al archivo `interfaces`:
+
+```bash
+auto enp0s3
+iface enp0s3 inet static
+address 192.168.1.100
+netmask 255.255.255.0
+gateway 192.168.1.1
+dns-nameservers 8.8.8.8 8.8.4.4
+```
+**_NOTA: DAR UNA IP DEL RANGO DE TU RED, NO OLVIDAR LA MÁSCARA DE RED, LA PUERTA DE ENLACE Y LOS DNS_**
+
+
+![static](image13.png)
+
+NOTA: guardar archivo y salir (CTRL + O y luego CTRL + X)
+
+## 8.3. Reiniciar el servicio de red y comprobar la conexión
+
+
+```bash
+systemctl restart networking
+```
+
+ver si nos ha cambiado la ip con el comando `ip a`
+
+```bash
+ping google.com
+```
+
+
