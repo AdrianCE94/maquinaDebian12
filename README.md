@@ -97,3 +97,34 @@ Durante la instalación de Debian, es importante prestar atención a la partici�
 
 
 Para las demás opciones durante la instalación, puedes seguir el asistente y seleccionar "siguiente" según tus preferencias personales.
+
+# 6. Configuración de Repositorios para Debian 12
+
+Para configurar los repositorios en Debian 12, sigue estos pasos:
+
+## 1. Abrir el archivo de configuración de repositorios
+
+Abre una terminal y edita el archivo `/etc/apt/sources.list` usando un editor de texto como `nano` o `vim`. Por ejemplo:
+
+```bash
+su -
+
+nano /etc/apt/sources.list
+```
+
+## 2. Configurar los repositorios
+
+Agrega los siguientes repositorios al archivo `sources.list`:
+
+```bash
+deb http://deb.debian.org/debian/ bookworm main contrib non-free
+deb-src http://deb.debian.org/debian/ bookworm main contrib non-free
+
+deb http://deb.debian.org/debian-security/ bookworm-security main contrib non-free
+deb-src http://deb.debian.org/debian-security/ bookworm-security main contrib non-free
+
+deb http://deb.debian.org/debian/ bookworm-updates main contrib non-free
+deb-src http://deb.debian.org/debian/ bookworm-updates main contrib non-free
+```
+
+**NOTA**: NO OLVIDES COMENTAR LA PRIMERA LINEA NADA MÁS ABRIR EL ARHIVO DE REPOSITORIOS.
