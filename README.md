@@ -45,10 +45,30 @@ Antes de comenzar, asegúrate de cumplir con los siguientes requisitos en tu sis
    - **URL directa**: https://cdimage.debian.org/debian-cd/current/amd64/iso-dvd/
    
      ![isoDebian](imgs/image.png)
-     ![requires](image2.png)
+     
 
    - **Tamaño del archivo**: Alrededor de 4GB
 
 ---
 
 Asegúrate de que la imagen ISO descargada esté completa antes de continuar con la creación de la máquina virtual.
+
+## 4. Requisitos de Instalación de Debian 12
+
+![requires](image2.png)
+
+## 4.3 Requisitos de Recursos Asignados a la Máquina Virtual
+
+Para optimizar el rendimiento durante la instalación de Debian 12, se han asignado los siguientes recursos a la máquina virtual:
+
+- **RAM Asignada**: 5000 MB (5 GB)
+  - **Nota**: Aunque 4500 MB (4.5 GB) es suficiente, se ha asignado 5000 MB para acelerar el proceso de instalación.
+
+- **Procesadores Asignados**: 4 núcleos
+  - **Nota**: Aunque 2 núcleos (procesadores) son suficientes, se han asignado 4 núcleos para mejorar la velocidad de instalación.
+
+---
+
+Estos recursos ayudarán a garantizar que la instalación de Debian 12 se realice de manera eficiente y rápida.
+
+![vb](image3.png)
