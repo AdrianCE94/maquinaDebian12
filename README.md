@@ -62,16 +62,16 @@ Asegúrate de que la imagen ISO descargada esté completa antes de continuar con
 Para optimizar el rendimiento durante la instalación de Debian 12, se han asignado los siguientes recursos a la máquina virtual:
 
 - **RAM Asignada**: 5000 MB (5 GB)
-  - **Nota**: Aunque 4500 MB (4.5 GB) es suficiente, se ha asignado 5000 MB para acelerar el proceso de instalación.
+  - **_Nota: Aunque 4500 MB (4.5 GB) es suficiente, se ha asignado 5000 MB para acelerar el proceso de instalación._**
 
 - **Procesadores Asignados**: 4 núcleos
-  - **Nota**: Aunque 2 núcleos (procesadores) son suficientes, se han asignado 4 núcleos para mejorar la velocidad de instalación.
-  - **Nota**: Si tu sistema tiene menos núcleos, asigna solo los disponibles.
+  - **_Nota: Aunque 2 núcleos (procesadores) son suficientes, se han asignado 4 núcleos para mejorar la velocidad de instalación._**
+  - **_Nota: Si tu sistema tiene menos núcleos, asigna solo los disponibles._**
   
 - **Almacenamiento Asignado**: En mi caso he asignado 40gb de almacenamiento dinámico.
-  - **Nota**: El almacenamiento dinámico es una característica que permite que el tamaño del disco virtual crezca a medida que se necesite, hasta un tamaño máximo que se haya especificado al crear el disco.
+  - **_Nota: El almacenamiento dinámico es una característica que permite que el tamaño del disco virtual crezca a medida que se necesite, hasta un tamaño máximo que se haya especificado al crear el disco._**
 - **Adaptador de Red**: adaptador puente.
-  - **Nota**: El adaptador de red en modo puente permite que la máquina virtual se comunique directamente con la red física, obteniendo una dirección IP de la misma subred que el host.(más tarde configuraremos la red en  el propio debian12)
+  - **_Nota: El adaptador de red en modo puente permite que la máquina virtual se comunique directamente con la red física, obteniendo una dirección IP de la misma subred que el host.(más tarde configuraremos la red en  el propio debian12)_**
 ---
 
 Estos recursos ayudarán a garantizar que la instalación de Debian 12 se realice de manera eficiente y rápida.
@@ -127,7 +127,7 @@ deb http://deb.debian.org/debian/ bookworm-updates main contrib non-free
 deb-src http://deb.debian.org/debian/ bookworm-updates main contrib non-free
 ```
 
-**NOTA: NO OLVIDES COMENTAR LA PRIMERA LINEA NADA MÁS ABRIR EL ARHIVO DE REPOSITORIOS, PUEDE DAR FALLO AL ACTUALIZAR**
+**_NOTA: NO OLVIDES COMENTAR LA PRIMERA LINEA NADA MÁS ABRIR EL ARHIVO DE REPOSITORIOS, PUEDE DAR FALLO AL ACTUALIZAR_**
 
 ## 3. Guardar y Salir
 
@@ -141,4 +141,4 @@ Actualiza la lista de paquetes de Debian 12 ejecutando el siguiente comando:
 ```bash
 apt update && apt upgrade -y
 ```
-**NOTA: PUEDE SER QUE NECESITES SER ROOT, PARA ELLO EJECUTA EL COMANDO `su -` Y LUEGO EL COMANDO ANTERIOR**
+**_NOTA: PUEDE SER QUE NECESITES SER ROOT, PARA ELLO EJECUTA EL COMANDO `su -` Y LUEGO EL COMANDO ANTERIOR_**
