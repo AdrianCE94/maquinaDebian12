@@ -208,4 +208,10 @@ ver si nos ha cambiado la ip con el comando `ip a`
 ping google.com
 ```
 
+![ping](image14.png)
+
+
+
+
+
 
