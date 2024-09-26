@@ -210,6 +210,58 @@ ping google.com
 
 ![ping](image14.png)
 
+---
+
+# 9. Personalización de Debian 12 interesante
+
+## 9.1 Reemplazar Network Manager por net-tools (opcional)
+
+    ```bash
+    apt purge network-manager
+    apt install net-tools
+    ```
+
+## 9.2 hostname (camibar el nombre de la máquina)
+    
+        ```bash
+        nano /etc/hostname
+        ```
+
+## 9.3 Instalar htop (monitor de recursos)
+
+    ```bash
+    apt install htop
+    ```
+
+## 9.4 Configurar la ayuda en español (man)
+
+    ```bash
+    apt install manpages-es
+    ```
+o
+
+archivo de configuracion  etc/locale.gen
+y  /etc/default/locale y añadir 
+
+```
+LANG=es_ES.UTF-8
+LANGUAGE=es_ES:es
+LC_ALL=es_ES.UTF-8
+```
+
+## 9.5 Instalar aplicacion gráfica para gestionar usuarios y grupos
+
+    ```bash
+    apt install gnome-system-tools
+    ```
+
+    
+
+
+
+
+
+
 
 
 
