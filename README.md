@@ -66,7 +66,12 @@ Para optimizar el rendimiento durante la instalación de Debian 12, se han asign
 
 - **Procesadores Asignados**: 4 núcleos
   - **Nota**: Aunque 2 núcleos (procesadores) son suficientes, se han asignado 4 núcleos para mejorar la velocidad de instalación.
-
+  - **Nota**: Si tu sistema tiene menos núcleos, asigna solo los disponibles.
+  
+- **Almacenamiento Asignado**: En mi caso he asignado 40gb de almacenamiento dinámico.
+  - **Nota**: El almacenamiento dinámico es una característica que permite que el tamaño del disco virtual crezca a medida que se necesite, hasta un tamaño máximo que se haya especificado al crear el disco.
+- **Adaptador de Red**: adaptador puente.
+  - **Nota**: El adaptador de red en modo puente permite que la máquina virtual se comunique directamente con la red física, obteniendo una dirección IP de la misma subred que el host.(mas adelante configuraremos la red en la maquina virtualen el propio debian12)
 ---
 
 Estos recursos ayudarán a garantizar que la instalación de Debian 12 se realice de manera eficiente y rápida.
