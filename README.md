@@ -44,7 +44,8 @@ Antes de comenzar, asegúrate de cumplir con los siguientes requisitos en tu sis
 
    - **URL directa**: https://cdimage.debian.org/debian-cd/current/amd64/iso-dvd/
    
-    ![isoDebian](imgs/image.png)
+     ![isoDebian](imgs/image.png)
+     ![requires](image2.png)
 
    - **Tamaño del archivo**: Alrededor de 4GB
 
