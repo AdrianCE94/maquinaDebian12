@@ -32,3 +32,5 @@ Antes de comenzar, asegúrate de cumplir con los siguientes requisitos en tu sis
    ```bash
    sudo apt update
    sudo apt install virtualbox
+   sudo apt install virtualbox-ext-pack
+
