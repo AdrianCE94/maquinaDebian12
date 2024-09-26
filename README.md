@@ -81,3 +81,19 @@ Estos recursos ayudarán a garantizar que la instalación de Debian 12 se realic
 ![nett](image4.png)
 
 ![space](image5.png)
+
+>ya tenemos la maquina virtual creada, ahora vamos a instalar el sistema operativo. ¡Ya podemos arrancar!
+
+
+## 5. Instalación de Debian 12 en la Máquina Virtual
+Durante la instalación de Debian, es importante prestar atención a la partición de disco. Asegúrate de realizar la instalación separando las siguientes particiones:
+
+/ (Raíz): Esta es la partición principal donde se instalará el sistema operativo. Asegúrate de asignar un tamaño adecuado según tus necesidades.
+
+/home: Esta partición es donde se almacenarán los archivos de usuario. Separarla permite una gestión más fácil de los datos personales y facilita las actualizaciones del sistema.
+
+/swap: La partición de intercambio es útil para mejorar el rendimiento del sistema. Su tamaño puede ser igual al de la RAM o más, dependiendo del uso que le des al sistema.
+               ![partitions](image6.png)
+
+
+Para las demás opciones durante la instalación, puedes seguir el asistente y seleccionar "siguiente" según tus preferencias personales.
