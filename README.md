@@ -270,9 +270,9 @@ Si quieres ver comandos básicos de linux, puedes visitar mi repositorio (pdte d
 
 
 
-<p style= 'text-align:center;'>
+<div style="text-align: center;">
     <img src="imgs/thanks.png" alt="fin" width="500">
-</p>
+</div>
 
 
 ---
