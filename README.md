@@ -127,7 +127,7 @@ deb http://deb.debian.org/debian/ bookworm-updates main contrib non-free
 deb-src http://deb.debian.org/debian/ bookworm-updates main contrib non-free
 ```
 
-**NOTA**: NO OLVIDES COMENTAR LA PRIMERA LINEA NADA MÁS ABRIR EL ARHIVO DE REPOSITORIOS, PUEDE DAR FALLO AL ACTUALIZAR
+**NOTA: NO OLVIDES COMENTAR LA PRIMERA LINEA NADA MÁS ABRIR EL ARHIVO DE REPOSITORIOS, PUEDE DAR FALLO AL ACTUALIZAR**
 
 ## 3. Guardar y Salir
 
@@ -141,4 +141,4 @@ Actualiza la lista de paquetes de Debian 12 ejecutando el siguiente comando:
 ```bash
 apt update && apt upgrade -y
 ```
-**NOTA:** PUEDE SER QUE NECESITES SER ROOT, PARA ELLO EJECUTA EL COMANDO `su -` Y LUEGO EL COMANDO ANTERIOR
+**NOTA: PUEDE SER QUE NECESITES SER ROOT, PARA ELLO EJECUTA EL COMANDO `su -` Y LUEGO EL COMANDO ANTERIOR**
