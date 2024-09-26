@@ -264,15 +264,16 @@ LC_ALL=es_ES.UTF-8
 ---
 Con esto ya tendremos una maquina virtual con debian 12 personalizada y lista para trabajar.
 
+Se recomienda hacer una clonación de la máquina virtual para tener una copia de seguridad por si algo falla
 Para cualquier duda o sugerencia, no dudes en contactar conmigo o colaborar en el repositorio.Gracias.
 
 Si quieres ver comandos básicos de linux, puedes visitar mi repositorio (pdte de subir) donde encontrarás una guía básica de comandos linux  y los comandos de administración del sistema más utilizados.
 
 
 
-<div style="text-align: center;">
+<p align="center">
     <img src="imgs/thanks.png" alt="fin" width="500">
-</div>
+</p>
 
 
 ---
