@@ -1,6 +1,8 @@
 # maquinaDebian12
 Preparación de una maquina con su configuración personalizada
 
+NO OLVIDES QUE ESTA CONFIGURACIÓN LA PUEDES USAR TANTO EN UNA MAQUINA VIRTUAL O UNA MAQUINA FÍSICA.
+
 ![debian](imgs/debian.png)
 
 # Requisitos para Preparar una Máquina Virtual con Debian 12
